@@ -1,0 +1,1373 @@
+@CHARSET "ISO-8859-1";
+/* CSS do AgenciaWeb
+	- Este arquivo está estruturado da seguinte maneira:
+		- Elementos de cabeçalho
+		- Elementos de body
+		- Elementos de rodapé
+		- Outros elementos
+	- Cada seção possui subtópicos que separam alguns itens semelhantes, como
+	  menu, caixas de aviso, formulários, textos, etc.
+	- Cada elementos apresenta uma documentação, indicando sua função e os
+	  principais locais onde é utilizado.
+*/
+
+/* ***************** Elementos de cabeçalho ***************** */
+
+
+.back {display: none;
+    background-color: rgba(0,0,0,0.50);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top:0;
+    left:0;
+    position: fixed;
+}
+
+.content {
+    background-color: #fff;
+    top: 30%;
+    left: 27%;
+    width: 50%;
+    height: 50%;
+    border: solid 10px;
+    padding: 10px;
+    position: absolute;
+    overflow: auto;
+    font-color: #000;
+}
+
+img{
+    border-style:none;
+    background-image: none;
+}
+body.mceContentBody{
+    background-image: none !important;
+    background:white;
+}
+
+body {
+    /* Todas as páginas herdarão as características aqui estabelecidas,
+    desde que estas sejam herdáveis, obviamente */
+    font-family: Arial;
+    font-size: 8pt;
+    margin: 0px;
+    padding: 0px;
+    font:normal 0.8em Arial, Helvetica, sans-serif;
+    color:#333333;
+    background:url(../imagens/bg.jpg) repeat-x top;
+    background-color:#FFF;
+}
+
+br{
+    clear: both;
+}
+
+#all {
+    /* Div principal, todas as características colocadas aqui serão herdadas*/
+    background: transparent;
+    overflow: auto;
+    /* Utilizada em menuAgencia.jsp */
+}
+
+#container{
+    width:760px;
+    margin: 0 auto;
+}
+#container .divHeader{
+    height:200px;
+    padding:0 0 0 7px;
+}
+
+#fundoLateralIndex{
+    border-collapse:collapse;
+    padding: 3px 4px 4px 0;
+    width: 167px;
+    /* Utilizado somente pelo headerLogin.jsp */
+}
+
+/* MENU */
+#mn {
+    /* Div do menu */
+    width: 177px;
+    background-image:url(../imagens/bgIdentificacaoM.jpg);
+    background-repeat: repeat-y;
+    background-position: left top;
+    float: left;
+    /* Utilizado em menuAgencia.jsp */
+}
+
+#mn table{
+    background:url(../imagens/bgIdentificacaoT.jpg) no-repeat top;
+    background-color: #E1E1E1;
+}
+
+#mn table tbody td{
+    padding:3px 5px 5px 10px;
+}
+
+#mn table tbody td.itemMenu{
+    background:url(../imagens/bgIdentificacaoCanto.jpg) repeat-y right;
+}
+
+#mn table tfoot{
+    background-image:url(../imagens/bgIdentificacaoB.jpg);
+    background-repeat:no-repeat;
+    background-position:top;
+    background-color: white;
+}
+
+h1.cb {
+    /* Titulo acima do menu que indica quem está logado */
+    color: #777772;
+    font-size: 20px;
+    padding: 0px;
+    margin: 1px;
+    height: 50px;
+    /* Utilizado no menuAgencia.jsp */
+}
+
+#fundoLinhaMenu{
+    /* Define cor da linha situada entre as opções dos menus laterais */
+    background:url(../imagens/bgIdentificacaoM.gif) repeat-y top;
+    /* Utilizado por headerLogin.jsp e menuAgencia.jsp */
+}
+
+.menuTexto {
+    /* Define texto do menu */
+    font-family: Arial;
+    font-size: 11px;
+    color: #000000;
+    font-weight: normal;
+    float: left;
+    /* Utilizado por headerLogin.jsp e menuAgencia.jsp */
+}
+
+.textoMenu {
+    /* Define texto do menu */
+    font-family: Arial;
+    font-size: 11px;
+    color: black;
+    font-weight: normal;
+    vertical-align: middle;
+    /* Utilizado por headerLogin.jsp e menuAgencia.jsp */
+}
+
+#mn a{
+    /* Define texto do menu */
+    padding-left:4px;
+    text-decoration:none;
+    color:#000000;
+    font:normal 12px Arial, Helvetica, sans-serif;
+    display: block;
+    float: none;
+    vertical-align: middle;
+    /* Utilizado por headerLogin.jsp e menuAgencia.jsp */
+}
+
+#mn img {
+    padding-left: 5px;
+}
+/* [fim] MENU */
+
+/* ***************** Elementos de body ***************** */
+
+#pg {
+    /* Div do conteúdo */
+    width: 570px;
+    padding-bottom: 100px;
+    margin: 0px 0px 0px 10px;
+    float: left;
+    right: 0;
+    background: #FFFFFF;
+    /* Iniciado no menuAgencia.jsp e terminado no rodape.jsp */
+}
+
+#fundoPrincipalLogin {
+    /* Define caracteristicas da tabela de conteudo das paginas de autenticacao */
+    background-color:#FFFFFF;
+    border-collapse:collapse;
+    border:1px solid #FFFFFF;
+    /* Utilizado pelos arquivos em /autenticar */
+}
+
+/* Tabelas */
+.fundoTituloTabela{
+    /* Define cor de fundo do header das tabelas de consultas */
+    background-color:#00ADCD;
+}
+
+.fundoSubTituloTabela{
+    /* Define cor de fundo do header das tabelas de consultas */
+    background-color: #eaebeb;
+}
+
+.fundoLinha1Tabela{
+    /* Define cor de fundo da linha ímpar das tabelas de consultas */
+    background-color:#FFFFFF;
+}
+
+.fundoLinha2Tabela{
+    /* Define cor de fundo da linha par das tabelas de consultas */
+    background-color:#F2F0F2;
+}
+.fundoLinhaDestaqueTabela{
+    /* Define cor de fundo do header das tabelas de consultas */
+    background-color:#FFFEC5;
+}
+
+.even{
+    /* Define cor de fundo da linha ímpar das tabelas de consultas */
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:5px;
+    padding-right:5px;
+    margin-bottom:1px;
+    background-color:#FFFFFF;
+}
+
+.odd{
+    /* Define cor de fundo da linha par das tabelas de consultas */
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:5px;
+    padding-right:5px;
+    margin-bottom:1px;
+    background-color:#F2F0F2;
+}
+
+.fundoRodapeTabela{
+    /* Define cor de fundo do header das tabelas de consultas */
+    background: #eaebeb;
+    color:#01438c;
+    font-weight:bold;
+    margin-bottom:2px;
+    padding-bottom:3px;
+    padding-top:3px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #abced6;
+}
+/* [fim] tabelas */
+
+.right {
+    /* Seta float do elemento para direito */
+    float: right;
+    /* utilizada em algumas páginas */
+}
+
+.textright {
+    /* Seta float do elemento para direito */
+    text-align: right;
+    /* utilizada em algumas páginas */
+}
+
+/* Caixa de aviso */
+#avisoDadosCadastrais {
+    /* Define caracteristicas da caixa com os dados cadastrais
+    do usuario autenticado */
+    background-color:#FFFFFF;
+    border:1px solid #00ADCD;
+    /* Utilizado cabecalho.jsp */
+}
+
+.lineSpacingFixed {
+    /* Fixa a altura da linha na caixa de dados do usuario autenticado */
+    line-height: 15px;
+    /* Utilizado cabecalho.jsp */
+}
+
+#avisoErro {
+    /* Define caixa de erros */
+    background-color:#00ADCD;
+    border:1px solid #00ADCD;
+    /* Utilizado pelo resource bundle  */
+}
+
+.avisoMensagem {
+    /* Define caixa de mensagens, avisos */
+    border:1px solid #00ADCD;
+    padding: 3px;
+    /* Utilizado pelo resourcebundle e paginas q apresentam mensagens */
+}
+.textoAviso{
+    /* define textos de subtitulos */
+    font-family: Arial;
+    font-size: 14px;
+    color: #00ADCD; /* #00337F;*/
+    font-weight: bold;
+    /* Utilizado nos titulos de cada seção e na mensagem
+    de bem-vindo da pagina inicial */
+}
+/* [fim] Caixa de aviso */
+
+/* Links normais e visitados: cor e decoracao do texto */
+a:link {
+    text-decoration: none;
+    color: #777772;
+}
+a:visited {
+    text-decoration: none;
+    color: #777772;
+}
+/* Links onmouseover e ativos(quando clicados): cor e decoracao do texto */
+a:hover {
+    text-decoration: underline;
+    color: #00ADCD;
+}
+a:active {
+    color: #000000;
+}
+/* [fim] Links */
+
+/* Links para visualizar lista e anexo da SS */
+.linkAnexo{
+    background: none !important;
+    font-family: Arial;
+    text-decoration: none;
+    position:absolute;
+    color: #777772;
+    font-size:11px;
+    font-weight: bold;
+    text-align:center;
+    cursor: pointer;
+    border: none;
+}
+.linkAnexo:hover {
+    text-decoration: underline;
+    color: #00ADCD;
+}
+
+.linkVisuAnexo{
+    font-family: Arial;
+    text-decoration: none;
+    color: #777772;
+    font-size:11px;
+    font-weight: bold;
+    text-align:center;
+    cursor: pointer;
+    background: none !important;
+    border: none;
+}
+
+.linkVisuAnexo:hover {
+    text-decoration: underline;
+    color: #00ADCD;
+}
+
+/* [fim] Links para visualizar anexo da SS */
+
+.anexoDadosSS{
+    background-color:#fff;
+    border: 1px solid #00ADCD;
+    width: 92.3%;
+    margin-left: 13px;
+    margin-bottom: 30px;
+    padding: 8px;
+}
+
+/* Textos */
+.textoErroMensagem {
+    /* texto de avisos */
+    font-family: Arial;
+    font-size: 11px;
+    color: #FFFFFF;
+    font-weight: bold;
+    /* utilizada dentro das caixas com id #avisoErro */
+}
+
+.textoErroMensagemNegrito {
+    /* texto de avisos em negrito */
+    font-family: Arial;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: bold;
+    /* utilizada dentro das caixas com id #avisoErro */
+}
+
+.textoTopico {
+    /* define textos de subtitulos */
+    font-family: Arial;
+    font-size: 14px;
+    color: #00ADCD;
+    font-weight: bold;
+    /* Utilizado nos titulos de cada seção e na mensagem
+    de bem-vindo da pagina inicial */
+}
+
+.textoGeral {
+    /* Classe de texto padrao */
+    font-family: Arial;
+    font-size: 12px;
+    color: #777772;
+    /* Utilizada em várias páginas */
+}
+
+.textoGeralNegrito {
+    /* Classe de texto padrao em negrito */
+    font-family: Arial;
+    font-size: 12px;
+    color: #777772;
+    font-weight: bold;
+    /* Utilizada em várias páginas */
+}
+
+.textoGeralNegritoDireita {
+    /* Classe de texto padrao em negrito alinhado à direita */
+    font-family: Arial;
+    font-size: 12px;
+    color: #777772;
+    font-weight: bold;
+    text-align: right;
+    /* Utilizada em várias páginas */
+}
+
+.textoGeralNegritoEspacado {
+    /* Classe de texto padrao em negrito alinhado à direita */
+    font-family: Arial;
+    font-size: 12px;
+    color: #777772;
+    font-weight: bold;
+    padding: 5px;
+    /* Utilizada em várias páginas */
+}
+
+.textoGeralItalico {
+    /* Classe de texto padrao */
+    font-family: Arial;
+    font-size: 12px;
+    font-style: italic;
+    color: #777772;
+    /* Utilizada em várias páginas */
+}
+
+/* Textos de tabelas */
+.textoTituloTabela {
+    font-family: Arial;
+    font-size: 12px;
+    color: #FFFFFF;
+    font-weight: bold;
+    /* Utilizada em tabelas */
+}
+.textoOpcoesTabela {
+    font-family: Arial;
+    font-size: 11px;
+    color: #777772;
+    font-weight: bold;
+    /* Utilizada em tabelas */
+}
+.textoAsterisco {
+    font-family: Arial;
+    font-size: 14px;
+    color: #00ADCD;
+    font-weight: bold;
+    /* Utilizada junto com tabelas */
+}
+/* A classe .textoGeral tambem é utilizada nas tabelas */
+/* [fim] Textos */
+
+/* Formularios */
+.ln {
+    /* Propriedades das tags fieldset dos formulários */
+    border: none;
+    padding: 0px;
+    margin: 0px 0px -2px 0px;
+    /* Utilizado em tags fieldset, nos formularios */
+}
+
+.radio {
+    /* Tira a borda de elementos RADIO */
+    border: none;
+    /* Utilizada em alguns formulários */
+}
+
+.disabled {
+    /* Altera cor de fundo de elemento TEXT, indicando q está desativado */
+    background-color: #F2F0F2;
+    /* Utilizado em trocarTitularidadeInformarDocumento.jsp */
+}
+
+form {
+    /* Atribui margin e padding aos formulários */
+    margin: 0px;
+    padding: 0px;
+    /* Utilizado em todos os formulários */
+}
+
+/* Seta alinhamento e largura de divs em formularios */
+.colEsq10 {
+    padding: 5px 0 0 0;
+    width: 10%;
+    float: left;
+    height: 20px;
+    text-align: left;
+}
+.colEsq15 {
+    padding: 5px 0 0 0;
+    width: 15%;
+    float: left;
+    height: 20px;
+    text-align: left;
+}
+.colEsq20 {
+    padding: 5px 0 0 0;
+    width: 20%;
+    float: left;
+    height: 15px;
+    text-align: left;
+}
+.colEsq25 {
+    padding: 5px 0 0 0;
+    width: 25%;
+    float: left;
+    height: 15px;
+    text-align: left;
+}
+.colEsq30 {
+    padding: 5px 0 0 0;
+    width: 30%;
+    float: left;
+    height: 20px;
+    text-align: left;
+}
+.colEsq40 {
+    padding: 5px 0 0 0;
+    width: 40%;
+    float: left;
+    height: 20px;
+    text-align: left;
+}
+.colEsq50 {
+    padding: 5px 0 0 0;
+    width: 50%;
+    float: left;
+    height: 20px;
+    text-align: left;
+}
+.colEsq60 {
+    padding: 5px 0 0 0;
+    width: 60%;
+    float: left;
+    height: 20px;
+    text-align: left;
+}
+.colEsq70 {
+    padding: 5px 0 0 0;
+    width: 70%;
+    float: left;
+    height: 20px;
+    text-align: left;
+}
+.colEsq80 {
+    padding: 5px 0 0 0;
+    width: 80%;
+    float: left;
+    height: 20px;
+    text-align: left;
+}
+.colEsq90 {
+    padding: 5px 0 0 0;
+    width: 90%;
+    float: left;
+    text-align: left;
+    height: 20px;
+}
+/* Colunas Direitas */
+.colDir10 {
+    padding: 1px 3px 1px 3px;
+    width: 10%;
+    float: left;
+}
+
+.colDir20 {
+    padding: 1px 3px 1px 3px;
+    width: 20%;
+    float: left;
+}
+
+.colDir30 {
+    padding: 1px 3px 1px 3px;
+    width: 30%;
+    float: left;
+}
+
+.colDir40 {
+    padding: 1px 3px 1px 3px;
+    width: 40%;
+    float: left;
+}
+
+.colDir50 {
+    padding: 1px 3px 1px 3px;
+    width: 50%;
+    float: left;
+}
+
+.colDir60 {
+    padding: 1px 3px 1px 3px;
+    width: 60%;
+    float: left;
+}
+
+.colDir70 {
+    padding: 1px 3px 1px 3px;
+    width: 70%;
+    float: left;
+}
+
+.colDir80 {
+    padding: 1px 3px 1px 3px;
+    width: 80%;
+    float: left;
+}
+
+.colDir90 {
+    padding: 1px 3px 1px 3px;
+    width: 90%;
+    float: left;
+}
+
+.colDir {
+    padding: 5px 0 0 0;
+    float: left;
+    height: 20px;
+}
+
+select {
+    height: 20px;
+}
+
+fieldset.linha {
+    /* Características da borda ao redor de formulários */
+    border: none;
+    /* Utilizado nas paginas de login */
+}
+/* [fim] Formularios */
+
+hr {
+    border: 1px solid #777772;
+}
+
+/* ***************** Elementos de rodapé ***************** */
+
+div.copyright {
+    /* Define características do div contendo o texto de copyright */
+    padding: 2px;
+    width: 756px;
+    background-color: #777772;
+    clear: both;
+    /* Utilizado em rodape.jsp */
+}
+
+.textoCopyright {
+    /* Texto de copyright */
+    margin-left: 10px;
+    font-family: Arial;
+    font-size: 10px;
+    color: #FFFFFF;
+    /* Utilizado em rodape.jsp e rodapeLogin.jsp */
+}
+
+#fundoBase{
+    /* Define caracteristicas do rodape das paginas de autenticacao */
+    background-color:#777772;
+    border-collapse:collapse;
+    border:1px solid #ffffff;
+    width: 100%;
+    padding: 4px;
+    clear: none;
+    /* Utilizado em rodapeLogin.jsp */
+}
+
+/* ***************** Outros elementos ***************** */
+
+.noScroll {
+    /* Classe que ao ser aplicada a um elemento, define uma dimensão fixa e
+    introduz a barra de rolagem caso seu conteúdo ultrapasse suas dimensões */
+    width: 790px;
+    overflow: auto;
+    height: 500px;
+    /* nao utilizado */
+}
+
+.right {
+    /* Seta float do elemento para direito */
+    float: right;
+    /* utilizada em algumas páginas */
+}
+
+.center {
+    /* Centraliza o texto, botoes e imagens, utilizado em divs */
+    text-align: center;
+    /* Utilizado em algumas páginas */
+}
+.padrao table{
+    border:none;
+    border-collapse:collapse;
+    margin-bottom:5px;
+}
+.padrao table td{
+    border: 1px solid #CFCFCF;
+    color:#777772;
+    font-size:12px;
+}
+.padrao{
+    margin:3px 3px 15px 3px;
+    padding:5px 5px 5px 5px;
+    border:1px solid #C4C4C4;
+}
+.padrao legend{
+    font-weight:bold;
+    margin-bottom:5px;
+}
+.fechar {
+    text-align:center;
+}
+
+.ligacaoFontePassado{
+    color: #D81E05;
+    font-size: 8pt;
+}
+
+.ligacaoFundoPassado{
+    background: #D81E05;
+}
+
+.ligacaoFontePresente{
+    color: #D44F46;
+    font-size: 8pt;
+}
+
+.ligacaoFundoPresente{
+    background: #D44F46;
+}
+
+.ligacaoFonteFuturo{
+    color: #CCCCCC;
+    font-size: 8pt;
+}
+
+.ligacaoFundoFuturo{
+    background: #CCCCCC;
+}
+a.toolType:link{
+    color:#800;
+    font-size:10px;
+    text-decoration:underline;
+}
+a.toolType:visited{
+    color:#800;
+    font-size:10px;
+    text-decoration:underline;
+}
+a.toolType:hover{
+    color:#800;
+    font-size:10px;
+    text-decoration:none;
+}
+.tabelaTitulo{
+}
+.textoCaixaTitulo {
+    /* Classe de texto padrao */
+    font-family:Arial;
+    font-size:10px;
+    color:#01438C;
+    /* Utilizada em várias páginas */
+}
+.tituloCaixaOpcaoAutenticacao{
+    font-weight:bold;
+    color:#fff;
+    font-size:11px;
+}
+.tituloCaixaDadosCadastrais{
+    background-color:#FFF;
+}
+#solLoginBox1{
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-right-color: #888776;
+    border-left-color: #888776;
+    font-size:10px;
+    height:30px;
+    padding-right:10px;
+    padding-left:10px;
+    padding-top:5px;
+}
+#solLoginBox3{
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-right-color: #ff9900;
+    border-left-color: #ff9900;
+    font-size:10px;
+    height:30px;
+    padding-right:10px;
+    padding-left:10px;
+    padding-top:5px;
+}
+a.linkID:link{
+    font-size:10px;
+    color:#00a0c6;
+    text-decoration:underline;
+}
+a.linkID:hover{
+    font-size:10px;
+    color:#00a0c6;
+    text-decoration:none;
+}
+a.linkID:visited{
+    font-size:10px;
+    color:#00a0c6;
+    text-decoration:underline;
+}
+.caixaalta{text-transform:uppercase;}
+
+.textoErro {
+    font-family:Courier;
+    font-size:10px;
+    color:#728a8c;
+    /* Utilizada no erro.jsp */
+}
+.cursor{
+    cursor:pointer;
+}
+.divDica{
+    border:1px solid #FFAA00;
+    background-color:#FFFEC5;
+    color:#000;
+    font-size:11px;
+    padding:2px;
+    position:absolute;
+    visibility:hidden;
+    width:150px;
+}
+.upper {
+    text-transform:uppercase;
+}
+
+.divPerguntaFAQ{
+    background-color:#F7F7F7;
+    margin:0 0 0 0;
+    padding:3px 0 10px 0;
+    clear:both;
+    width:98%;
+}
+.divPerguntaFAQ a{
+    cursor:pointer;
+    padding:0 0 0 7px;
+}
+.divRespostaFAQ{
+    margin:3px 5px 5px 5px;
+    padding:0 0 0 30px;
+    font-weight:normal;
+    cursor:default;
+    display:none;
+    text-align:justify;
+}
+/*CSS utilizados no calendario*/
+
+#calendarDiv{
+    position:absolute;
+    width:205px;
+    border:1px solid #D81E05;
+    padding:1px;
+    background-color: #FFF;
+    font-family:arial;
+    font-size:10px;
+    padding-bottom:20px;
+    visibility:hidden;
+}
+#calendarDiv .selectBoxOver{
+    border:1px solid #FFF;
+    background-color: #D81E05;
+    color: #FFF;
+    position:relative;
+}
+#calendarDiv .selectBoxTime{
+    border:1px solid #FFFFFF;
+    color: #777772;
+    position:relative;
+}
+#calendarDiv .topBar{
+    height:16px;
+    padding:2px;
+    background-color: #D81E05;
+}
+#calendarDiv .selectBoxTimeOver{
+    border:1px solid #D81E05;
+    color: #216072;
+    position:relative;
+}
+
+#avisoAguardeDiv {
+    width: 200px;
+    height: 100px;
+    top: 55%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    position: absolute;
+}
+
+.scrollH{
+    width:530px;
+    overflow: auto;
+    padding:5px;
+}
+
+.botao{
+    display:inline-block;
+    width:auto;
+    padding:0 0 0 2px;
+    cursor:pointer;
+    text-align: center;
+}
+
+.botao input{
+    background:url(../imagens/btPadraoRight.png) repeat-x right center;
+    display:inline-block;
+    height:20px;
+    border:0;
+    color:#FFFFFF;
+    padding:0 2px 0 0;
+    font:bold 0.9em Arial, Helvetica, sans-serif;
+    cursor:pointer;
+}
+
+.botaoAnexar{
+    background:url(../imagens/btPadraoRight.png) repeat-x right center;
+    display:inline-block;
+    height:20px;
+    border:0;
+    color:#FFFFFF;
+    padding:0 2px 0 0;
+    font:bold 0.9em Arial, Helvetica, sans-serif;
+    cursor:pointer;
+}
+
+/* ************************************** */
+/* ******** FORMATAÇÃO TABLELESS ******** */
+/* ************************************** */
+
+.left{
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.both{
+    clear: both;
+}
+
+.tableless{
+    padding: 5px 5px 5px 10px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #777772;
+}
+
+.T020{ width: 20px;}
+
+.T025{ width: 25px;}
+
+.T030{ width: 30px;}
+
+.T035{ width: 35px;}
+
+.T040{ width: 40px;}
+
+.T045{ width: 45px;}
+
+.T050{ width: 50px;}
+
+.T055{ width: 55px;}
+
+.T060{ width: 60px;}
+
+.T065{ width: 65px;}
+
+.T070{ width: 70px;}
+
+.T075{ width: 75px;}
+
+.T080{ width: 80px;}
+
+.T085{ width: 85px;}
+
+.T090{ width: 90px;}
+
+.T095{ width: 95px;}
+
+.T100{ width: 100px;}
+
+.T120{ width: 120px;}
+
+.T140{ width: 140px;}
+
+.T160{ width: 160px;}
+
+.T180{ width: 180px;}
+
+.T200{ width: 200px;}
+
+.T240{ width: 240px;}
+
+.T280{ width: 280px;}
+
+.T320{ width: 320px;}
+
+.T360{ width: 360px;}
+
+.T400{ width: 400px;}
+
+.divBotoes{
+    padding: 10px;
+    font-size: 14px;
+}
+
+.formLabel{
+    padding: 5px 0 0 0;
+    float: left;
+    height: 20px;
+    font-family: Arial;
+    font-size: 12px;
+    color: #777772;
+    font-weight: bold;
+    text-align: left;
+}
+.txtLeitura{
+    font-family: Arial;
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    border: 1px;
+    border-style: solid;
+}
+
+.cboth{
+    clear: both !important;
+}
+
+
+.pl20{
+    padding-left: 20px !important;
+}
+
+.pr20{
+    padding-right: 20px !important;
+}
+
+.h22{
+    height: 22px !important;
+    min-height: 22px !important;
+    max-height: 22px !important;
+    overflow: hidden;
+}
+
+.h27{
+    height: 27px !important;
+    min-height: 27px !important;
+    max-height: 27px !important;
+    overflow: hidden;
+}
+
+.h28{
+    height: 28px !important;
+    min-height: 28px !important;
+    max-height: 28px !important;
+    overflow: hidden;
+}
+
+.h32{
+    height: 32px !important;
+    min-height: 32px !important;
+    max-height: 32px !important;
+    overflow: hidden;
+}
+
+.h44{
+    height: 44px !important;
+    min-height: 44px !important;
+    max-height: 44px !important;
+    overflow: hidden;
+}
+
+.w25{
+    width: 25px !important;
+    min-width: 25px !important;
+    max-width: 25px !important;
+}
+
+.w40{
+    width: 40px !important;
+    min-width: 40px !important;
+    max-width: 40px !important;
+}
+
+.w45{
+    width: 45px !important;
+    min-width: 45px !important;
+    max-width: 45px !important;
+}
+
+.w50{
+    width: 50px !important;
+    min-width: 50px !important;
+    max-width: 50px !important;
+}
+
+.w80{
+    width: 80px !important;
+    min-width: 80px !important;
+    max-width: 80px !important;
+}
+
+.w90{
+    width: 90px !important;
+    min-width: 90px !important;
+    max-width: 90px !important;
+}
+
+.w105{
+    width: 105px !important;
+    min-width: 105px !important;
+    max-width: 105px !important;
+}
+
+.w110{
+    width: 110px !important;
+    min-width: 110px !important;
+    max-width: 110px !important;
+}
+
+.w120{
+    width: 120px !important;
+    min-width: 120px !important;
+    max-width: 120px !important;
+}
+
+.w140{
+    width: 140px !important;
+    min-width: 140px !important;
+    max-width: 140px !important;
+}
+
+.w150{
+    width: 150px !important;
+    min-width: 150px !important;
+    max-width: 150px !important;
+}
+
+.w160{
+    width: 160px !important;
+    min-width: 160px !important;
+    max-width: 160px !important;
+}
+
+.w170{
+    width: 170px !important;
+    min-width: 170px !important;
+    max-width: 170px !important;
+}
+
+.w250{
+    width: 250px !important;
+    min-width: 250px !important;
+    max-width: 250px !important;
+}
+
+.w260{
+    width: 260px !important;
+    min-width: 260px !important;
+    max-width: 260px !important;
+}
+
+.w270{
+    width: 270px !important;
+    min-width: 270px !important;
+    max-width: 270px !important;
+}
+
+.w300{
+    width: 300px !important;
+    min-width: 300px !important;
+    max-width: 300px !important;
+}
+
+.w350{
+    width: 350px !important;
+    min-width: 350px !important;
+    max-width: 350px !important;
+}
+
+.w400{
+    width: 400px !important;
+    min-width: 400px !important;
+    max-width: 400px !important;
+}
+
+.ml5{
+    margin-left: 5px;
+}
+
+.ml10{
+    margin-left: 10px;
+}
+
+.mr5{
+    margin-right: 5px;
+}
+
+.hand{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.lh28{
+    line-height: 28px;
+}
+
+
+/* css modal */
+
+.back {display: none;
+    background-color: rgba(0,0,0,0.50);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top:0;
+    left:0;
+    position: fixed;
+}
+
+.content {
+    background-color: #fff;
+    top: 30%;
+    left: 27%;
+    width: 50%;
+    height: 50%;
+    border: solid 10px;
+    padding: 10px;
+    position: absolute;
+}
+
+.msgTruncate {
+    width: 480px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*SegundaViaSemAutenticacao*/
+.labelUnCons{color: #777772;
+    font-weight:bold}
+
+.labelDesEnde{font-family: Arial;
+    font-size: 11px;
+    color: #777772;
+    font-weight:bold}
+
+.desEnde{font-family: Arial;
+    font-size: 10px;
+    color: #777772;}
+
+.desDebitoTitulo{
+    color: #777772;
+    font-size: 13px;
+    font-weight:bold;}
+
+#listaFat {
+    border: 1px solid #00ADCD;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;}
+
+/*ConcluirOS*/
+#concluirosPg {
+    background-color:transparent;
+    margin-left: 130px;
+}
+
+#concluirosPg h2 {
+    margin-left: 20%;
+}
+.concluirosLabel {
+    font-family: Arial;
+    font-size: 12px;
+    color: #777772;
+    font-weight: bold;
+}
+
+@media screen and (max-width:360px) {
+    #concluirosPg{
+        margin-top: 0px;
+        font-size: 10px;
+        margin-left: 0%;
+        width: 320px;
+    }
+
+    #concluirosPg .logic-message{
+        font-size: 15px;
+    }
+
+    #concluirosPg h2 {
+        font-size: 30px;
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    .concluirosLabel {
+        font-size: 13px;
+    }
+
+    #concluirosPg input {
+        padding: 5px;
+        font-size: 15px;
+
+    }
+
+    #concluirosPg textarea {
+        font-size: 15px;
+        width: 200px;
+    }
+
+}
+
+@media screen and (min-width:600px) {
+    #concluirosPg{
+        margin-top: 50px;
+        font-size: 40px;
+        margin-left: 0%;
+        width: 600px;
+    }
+
+    #concluirosPg .logic-message{
+        font-size: 15px;
+    }
+
+    #concluirosPg h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .concluirosLabel {
+        font-size: 25px;
+    }
+
+    #concluirosPg input {
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    #concluirosPg textarea {
+        font-size: 15px;
+        width: 400px;
+    }
+}
