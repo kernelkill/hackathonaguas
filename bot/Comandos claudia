@@ -1,0 +1,6 @@
+
+claudia create --region us-east-1 --api-module bot
+
+claudia update --cache-api-config botCacheConfig
+
+claudia update --configure-fb-bot

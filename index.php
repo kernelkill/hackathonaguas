@@ -18,7 +18,7 @@
 <body onload="foco();">
 <div id="container">
     <div class="divHeader">
-        <img src="imagens/logo-aguas-guariroba.png" alt="" border="0"/>
+        <!--<img src="imagens/logo-aguas-guariroba.png" alt="" border="0"/>-->
     </div>
 
     <!-- headerLogin.jsp -->
@@ -130,7 +130,7 @@
 
                 <p></p>
 
-                <form name="LoginForm" method="post" action="#">
+                <form name="LoginForm" method="post" action="autentica.php">
                     <input type="hidden" name="param_url" value="/agencia/">
                     <div class="formLabel T120">
                         Codigo Cliente:

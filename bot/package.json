@@ -1,0 +1,17 @@
+{
+  "name": "bot",
+  "version": "0.0.0",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "aws-sdk": "^2.7.10",
+    "claudia-bot-builder": "~2.7.2",
+    "huh": "~2.0.0"
+  },
+  "devDependencies": {}
+}

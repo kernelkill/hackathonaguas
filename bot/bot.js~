@@ -1,0 +1,37 @@
+'use strict';
+var botBuilder = require('claudia-bot-builder'),
+    excuse = require('huh');
+const fbTemplate = botBuilder.fbTemplate;
+
+module.exports = botBuilder(function (request) {
+  let msg = '';
+	if(request.text == "Ola"){
+		msg = "com vai";
+	}
+	else
+	{
+		msg = "Em que posso ajudar";
+	}
+  	
+	
+		
+
+	
+	if(request.text === 'Debitos'){
+		const generic = new fbTemplate.Generic();
+		
+		return generic
+		 .addBubble('Debitos','vizualise aq os seus debitos')
+		   .addImage('https://claudiajs.com/assets/claudiajs.png')
+		   .addButton('Informar por cpf','CPF')
+		   .addButton('Informar por matricula')
+		   .get();	
+
+
+	}
+
+
+	console.log(msg);
+ 	return msg;
+	
+});
