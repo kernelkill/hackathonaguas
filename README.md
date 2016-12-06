@@ -1,7 +1,7 @@
 # hackathonaguas
 
 
-# GABRIEL DOMINGUES - ESQUADRAO NOOB
+# GABRIEL DOMINGUES - ESQUADRAO NERD
 
 Nome do projeto: **Alfred**
 
